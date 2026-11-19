@@ -9,7 +9,7 @@ import { Storage } from './ui/tabs/Storage'
 import { Buildings } from './ui/tabs/Buildings'
 
 // Loaded on startup until you open another save. Gitignored; drop any .sav into public/saves/.
-const DEFAULT_SAVE_URL = '/saves/foo.sav'
+const DEFAULT_SAVE_URL = `${import.meta.env.BASE_URL}saves/foo.sav`
 
 const TABS = {
   overview: 'Overview',
